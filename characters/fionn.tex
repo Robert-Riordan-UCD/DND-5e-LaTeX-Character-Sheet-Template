@@ -37,51 +37,53 @@
 \CharismaModifier{0}
 
 % Saving Throws
-\StrengthSavingThrowModifier{-1}
+\StrengthSavingThrowModifier{4}
 \DexteritySavingThrowModifier{2}
-\ConstitutionSavingThrowModifier{4}
-\IntelligenceSavingThrowModifier{1}
-\WisdomSavingThrowModifier{0}
-\CharismaSavingThrowModifier{5}
+\ConstitutionSavingThrowModifier{1}
+\IntelligenceSavingThrowModifier{0}
+\WisdomSavingThrowModifier{5}
+\CharismaSavingThrowModifier{0}
 
+% s d co i w ch
+% 2 2  1 0 5  0
 \AcrobaticsSkillModifier{2}
-\AnimalHandlingSkillModifier{0}
-\ArcanaSkillModifier{3}
-\AthleticsSkillModifier{-1}
-\DeceptionSkillModifier{3}
-\HistorySkillModifier{1}
-\InsightSkillModifier{2}
-\IntimidationSkillModifier{3}
-\InvestigationSkillModifier{3}
-\MedicineSkillModifier{0}
-\NatureSkillModifier{1}
-\PerceptionSkillModifier{0}
-\PerformanceSkillModifier{3}
-\PersuasionSkillModifier{3}
-\ReligionSkillModifier{1}
+\AnimalHandlingSkillModifier{5}
+\ArcanaSkillModifier{0}
+\AthleticsSkillModifier{4}
+\DeceptionSkillModifier{0}
+\HistorySkillModifier{0}
+\InsightSkillModifier{5}
+\IntimidationSkillModifier{0}
+\InvestigationSkillModifier{0}
+\MedicineSkillModifier{5}
+\NatureSkillModifier{2}
+\PerceptionSkillModifier{5}
+\PerformanceSkillModifier{0}
+\PersuasionSkillModifier{0}
+\ReligionSkillModifier{0}
 \SleightOfHandSkillModifier{2}
 \StealthSkillModifier{2}
-\SurvivalSkillModifier{2}
+\SurvivalSkillModifier{7}
 
 % Proficiencies
-\SetStrengthProficiency{0}
+\SetStrengthProficiency{1}
 \SetDexterityProficiency{0}
-\SetConstitutionProficiency{1}
+\SetConstitutionProficiency{0}
 \SetIntelligenceProficiency{0}
-\SetWisdomProficiency{0}
-\SetCharismaProficiency{1}
+\SetWisdomProficiency{1}
+\SetCharismaProficiency{0}
 
 \SetAcrobaticsProficiency{0}
 \SetAnimalHandlingProficiency{0}
-\SetArcanaProficiency{1}
-\SetAthleticsProficiency{0}
+\SetArcanaProficiency{0}
+\SetAthleticsProficiency{1}
 \SetDeceptionProficiency{0}
 \SetHistoryProficiency{0}
-\SetInsightProficiency{1}
+\SetInsightProficiency{0}
 \SetIntimidationProficiency{0}
-\SetInvestigationProficiency{1}
+\SetInvestigationProficiency{0}
 \SetMedicineProficiency{0}
-\SetNatureProficiency{0}
+\SetNatureProficiency{1}
 \SetPerceptionProficiency{0}
 \SetPerformanceProficiency{0}
 \SetPersuasionProficiency{0}
@@ -98,7 +100,7 @@
 \Initiative{2}
 \Speed{\parbox{40pt}{\centering 30
 
-\small{(30~swim)}}}
+% \small{(30~swim)}}}
 \MaxHitPoints{13}
 
 
@@ -112,12 +114,9 @@
 \PP{}
 
 
-\AddWeapon{Dagger}{+4}{1d4+2/p}
+\AddWeapon{Birga (Prevents sleep)}{}{1d6 piercing}
 
-\AddWeapon{Quarterstaff}{+1}{1d6-1/b}
-
-\AddWeapon{Dart}{+4}{1d4+2/p}
-
+\AddWeapon{Mac an Luinn}{}{1d8 slashing}
 
 \AttacksAdditional{
 % \textbf{Guiding Bolt}: att. +4, dmg 4d6/r
@@ -125,28 +124,32 @@
 
 \OtherProficienciesLanguages{\textbf{Languages:} Gaeilge. \\
 \textbf{Weapons}: Sling, Spear, Sword. \\
-\textbf{Other}: Herbalism Kit. \\}
+\textbf{Other}: \\}
 
 \Equipment{
-Birga (Spear): while equipped magic can't put you to sleep. \\
-Mac an Luinn (Longsword)
-\textbf{Weight:} \\
-\textbf{Capacity:} lb
 }
 
 \PersonalityTraits{
+    Inspiring \\
+    Noble \\
+    Relentless
 }
 
 \Ideals{
-Purity of our hearts
-Strength of our limbs
-Action to match our speech
+    Purity of our hearts \\
+    Strength of our limbs \\
+    Action to match our speech
 }
 
 \Bonds{
+    Bran and Sceolang: His hounds he is never seen without \\
+    The Fianna: His band of warriors and hunters \\
+    Oisin: His son
 }
 
 \Flaws{
+    Holds a grudge \\
+    Loyal to the Fianna above Ireland
 }
 
 \FeaturesTraits{
@@ -154,7 +157,14 @@ Action to match our speech
 \textbf{Thumb of Knowledge} \\
 \quad Fionn will automatically pass any wisdom check or saving throw provided he can suck his thumb. \\
 \textbf{Hands of Healing} \\
-\quad Drinking water from Fionn's hands grants 2d4 + 2 hit points.
+\quad Drinking water from Fionn's hands grants 2d4 + 2 hit points. \\
+\textbf{Favoured Enemies} \\
+\quad Giants, Fey. \\
+\textbf{Natural Explorer} \\
+\quad Forest. \\
+\textbf{Fighting Style} \\
+\quad Dueling. \\
+
 }
 
 
@@ -197,10 +207,10 @@ My name is actually Deimne, but everyone calls me Fionn because of my fair hair.
 
 
 %Magic
-\SpellcastingClass{Sorceror 2}
-\SpellcastingAbility{CHA}
-\SpellSaveDC{13}
-\SpellAttackBonus{+5}
+\SpellcastingClass{Ranger}
+\SpellcastingAbility{WIS}
+\SpellSaveDC{15}
+\SpellAttackBonus{+7}
 
 \FirstLevelSpellSlotsTotal{3}
 
